@@ -1,0 +1,42 @@
+name: Helm Actions
+
+on: workflow_dispatch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    env:
+      helm_version: v3.0.0
+      helm_arch: amd64
+      s3plugin_version: 0.15.1
+      # helm_url: "https://get.helm.sh/helm-$helm_version-linux-$helm_arch.tar.gz"
+      # s3_plugin_url: "https://github.com/hypnoglow/helm-s3.git --version $s3plugin_version"
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Install Helm
+      run: |
+        curl -LO https://get.helm.sh/helm-$helm_version-linux-$helm_arch.tar.gz
+        tar -zxvf helm-$helm_version-linux-$helm_arch.tar.gz
+        mv linux-$helm_arch/helm /usr/local/bin/helm
+        helm version --short
+
+    - name: Check if Helm S3 Plugin is installed
+      id: helm_s3_check
+      run: |
+        if helm plugin list | grep -q 's3'; then
+          echo "Helm S3 Plugin is already installed"
+          echo "helm_s3_installed=true" >> $GITHUB_ENV
+        else
+          echo "Helm S3 Plugin is not installed"
+          echo "helm_s3_installed=false" >> $GITHUB_ENV
+        fi
+
+    - name: Install Helm S3 Plugin
+      if: env.helm_s3_installed == 'false'
+      run: |
+        helm plugin install https://github.com/hypnoglow/helm-s3.git --version $s3plugin_version
+        helm plugin list

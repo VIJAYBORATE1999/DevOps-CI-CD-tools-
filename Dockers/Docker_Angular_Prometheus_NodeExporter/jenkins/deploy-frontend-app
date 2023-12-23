@@ -1,0 +1,24 @@
+properties([
+    parameters([
+        string(name: 'DOCKER_IMAGE_TAG', defaultValue: '0.0.1', description: 'docker imgae tag')
+    ])
+])
+
+node(){
+    IMAGE_NAME="bmarc-test-frontend:${DOCKER_IMAGE_TAG}"
+    DOCKER_HUB_REPO_NAME="st2inovatech"
+    CONTAINER_NAME="${IMAGE_NAME}"
+    local_image_name="${DOCKER_HUB_REPO_NAME}/${IMAGE_NAME}"
+        
+    stage('Deployment'){
+        withCredentials([usernamePassword(credentialsId: 'ffb50f57-4be1-4382-b620-ae12de2a295e' , passwordVariable: 'DOCKERHUB_PASSWORD', usernameVariable: 'DOCKERHUB_USERNAME')]) {
+            sh "docker login -u ${DOCKERHUB_USERNAME} -p ${DOCKERHUB_PASSWORD}"     
+
+            // Pull frontend docker image
+            sh "docker pull ${DOCKER_HUB_REPO_NAME}/${IMAGE_NAME}"
+            
+            // Rub frontend application
+            sh "docker run -p 4500:4500 -d ${local_image_name} --name ${CONTAINER_NAME}"
+        }
+    }
+}

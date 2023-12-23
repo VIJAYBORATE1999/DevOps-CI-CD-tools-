@@ -1,0 +1,39 @@
+---
+- hosts: localhost
+  become: yes
+  vars:
+    Name: vijay
+  tasks:
+    - name: Install a package with apt
+      apt:
+        name: nginx
+        state: present
+
+    - name: Copy a file
+      copy:
+        src: "/home/ncs/Downloads/MS Paint _ Microsoft Paint Online (1).png"
+        dest: /home/ncs/Downloads/AnsiCopyModule
+
+    - name: Manage a Git repository
+      git:
+        repo: https://github.com/VIJAYBORATE1999/Projects-C-plus-plus.git
+        dest: /home/ncs/Downloads/GitCloneRepoAnsi
+        version: main
+
+    - name: Execute a shell command
+      shell: echo "Hello, this is a shell command!"
+
+    - name: Manage a cron job
+      cron:
+        name: "Run a script"
+        minute: "*"
+        hour: "*"
+        day: "*"
+        month: "*"
+        weekday: "*"
+        job: /home/ncs/Downloads/AnsiModuleSCriptRun/helloworld.sh
+
+    - name: Debug a variable
+      debug:
+        msg: "The value of Name is {{ Name }}"
+

@@ -1,0 +1,18 @@
+---
+- hosts: localhost
+  become: yes
+  tasks:
+    - name: Download Tomcat
+      get_url:
+        url: "https://downloads.apache.org/tomcat/tomcat-9/v9.0.80/bin/apache-tomcat-9.0.80.tar.gz"
+        dest: "/home/ncs/Downloads/TOMCATINSTALLATIONANSI/DOWNLOADTOMCAT/apache-tomcat-9.0.80.tar.gz"
+
+    - name: Extract Tomcat
+      unarchive:
+        src: "/home/ncs/Downloads/TOMCATINSTALLATIONANSI/DOWNLOADTOMCAT/apache-tomcat-9.0.80.tar.gz"
+        dest: "/home/ncs/Downloads/TOMCATINSTALLATIONANSI/EXTRACTTOMCAT/"
+        remote_src: yes
+
+    - name: Start Tomcat
+      command: "/home/ncs/Downloads/TOMCATINSTALLATIONANSI/EXTRACTTOMCAT/apache-tomcat-9.0.80/bin/startup.sh"
+

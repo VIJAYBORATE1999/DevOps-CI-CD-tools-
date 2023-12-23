@@ -1,0 +1,37 @@
+STEP 1) INstall Node (NVM)
+touch ~/.bash_profile
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
+source ~/.nvm/nvm.sh
+nvm --version
+STEP 2)Remove node modules folder if it existes 
+rm -rf node_modules
+STEP 3)SEE PACKAGE .JSON FILE for dependencies  installtion
+sudo apt npm install 
+npm install
+STEP 4)iNSTALL SPECIFIC VERSION OF NODE 
+see packhe .json file engine ->
+"engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+
+  So the commnads will be --->  
+nvm install 18.17.0
+nvm use 18.17.0
+nvm alias default 18.17.0
+npm install -g npm@10.2.3
+STEP 5) npm start
+THis will run REct app locally 
+
+STEP 6) Lets do  docker part
+Build Docker Image ---> sudo docker build -t vijayreactapp .
+Run container --> sudo docker run -p 3050:3000 -d vijayreactapp
+http://localhost:3050
+So appliccation is running on docker port 3000 which is mapped to your machine locally 
+at 3050
+
+
+
+
+
+

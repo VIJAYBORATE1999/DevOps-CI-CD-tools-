@@ -1,0 +1,39 @@
+properties([
+    parameters([
+        string(name: 'RELEASE_VERSION', defaultValue: '0.0.1', description: 'Release default version')
+    ])
+])
+
+node(){
+    
+    APP_NAME="aws-flow"
+    RELEASE_VERSION="0.0.1"
+    
+    DOCKER_HUB_REPO_NAME="st2inovatech"
+    DOCKER_IMAGE_TAG=params.RELEASE_VERSION
+    IMAGE_NAME="bmarc-test-frontend:${DOCKER_IMAGE_TAG}"
+
+    stage('clone repos') {
+        git branch: 'main', credentialsId: 'd49532f8-7b71-47b5-a8cb-5232515b51b2', url: 'http://10.10.1.64:8008/demo/demo-frontend.git'
+    }
+
+    stage('build image') {
+      baseImage = docker.build(IMAGE_NAME, "-f Dockerfile . ") 
+    }   
+    
+    stage('push image') {
+        withCredentials([usernamePassword(credentialsId: 'ffb50f57-4be1-4382-b620-ae12de2a295e' , passwordVariable: 'DOCKERHUB_PASSWORD', usernameVariable: 'DOCKERHUB_USERNAME')]) {
+            sh "docker login -u ${DOCKERHUB_USERNAME} -p ${DOCKERHUB_PASSWORD}"     
+            // Tag Docker image
+            sh "docker tag ${IMAGE_NAME} ${DOCKER_HUB_REPO_NAME}/${IMAGE_NAME}"
+            // Push Docker image to Docker Hub
+            sh "docker push ${DOCKER_HUB_REPO_NAME}/${IMAGE_NAME}"
+        }
+
+    }
+    
+    stage('remove dangling image'){
+      sh "docker rmi ${DOCKER_HUB_REPO_NAME}/${IMAGE_NAME}"
+      sh "docker rmi ${IMAGE_NAME}"
+    }
+}

@@ -1,0 +1,7 @@
+/home/ncs/Desktop/Dot Net application/MyWebsite/bin/app.publish/MyWebsite
+/home/ncs/Desktop/Dot Net application/MyWebsite/bin/app.publish/appsettings.Development.json
+/home/ncs/Desktop/Dot Net application/MyWebsite/bin/app.publish/appsettings.json
+/home/ncs/Desktop/Dot Net application/MyWebsite/bin/app.publish/MyWebsite.dll
+/home/ncs/Desktop/Dot Net application/MyWebsite/bin/app.publish/MyWebsite.deps.json
+/home/ncs/Desktop/Dot Net application/MyWebsite/bin/app.publish/MyWebsite.runtimeconfig.json
+/home/ncs/Desktop/Dot Net application/MyWebsite/bin/app.publish/MyWebsite.pdb

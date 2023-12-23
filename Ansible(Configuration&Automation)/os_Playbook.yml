@@ -1,0 +1,46 @@
+---
+- name: Install Tomcat Based on Operating System
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Check the OS of Machine - if Debian then package manager is set to apt
+      set_fact:
+        package_manager: "apt"
+      when: ansible_os_family == "Debian"
+
+    - name: Check the OS of Machine - if RedHat then package manager is set to yum
+      set_fact:
+        package_manager: "yum"
+      when: ansible_os_family == "RedHat"
+
+    - name: Installing Tomcat using For Debian as package manager is set to apt
+      apt:
+        name: tomcat9
+        state: present
+      when: package_manager == "apt"
+
+    - name: Installing Tomcat using For RedHat as package manager is set to yum
+      yum:
+        name: tomcat
+        state: present
+      when: package_manager == "yum"
+
+    - name: Configure Tomcat port to 8081
+      lineinfile:
+        path: /etc/tomcat9/server.xml  # Update with the actual path
+        regexp: '8080'
+        line: '    port="8081" protocol="HTTP/1.1" redirectPort="8443" />'
+      when: package_manager == "apt"
+
+    - name: Configure Tomcat port to 8081
+      lineinfile:
+        path: /etc/tomcat/server.xml  # Update with the actual path
+        regexp: '8080'
+        line: '    port="8081" protocol="HTTP/1.1" redirectPort="8443" />'
+      when: package_manager == "yum"
+
+    - name: IF OS is not Debian nor Redhat then package manager is not defined
+      debug:
+        msg: "Tomcat installation skipped for this operating system."
+      when: package_manager is not defined
+

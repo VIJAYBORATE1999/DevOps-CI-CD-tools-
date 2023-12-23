@@ -1,0 +1,5 @@
+npm init -y               --- create a default package.json file.
+make app.js file
+npm install express         --- 
+
+docker run -p 3000:3000 my-node-app

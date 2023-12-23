@@ -1,0 +1,12 @@
+---
+- name: Install Apache
+  apt:
+    name: apache2
+    state: present  # You can use 'latest' to ensure Apache is up to date
+
+- name: Start Apache service and enable it at boot
+  service:
+    name: apache2
+    state: started
+    enabled: yes
+

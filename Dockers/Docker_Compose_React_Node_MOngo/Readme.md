@@ -18,8 +18,19 @@ Folder Structure
 |-docker-compose.yaml      
 #########################################################
 </pre>
+
+<h3>Frontenddockerfile <h3>
+<img src="Frontenddockerfile.png" alt="Frontend Dockerfile">
+
+<h3>Backenddockerfile<h3>
+<img src="Backenddockerfile.png" alt="Backend Dockerfile">
+
+<h3>Dockercomposefile<h3>
+<img src="Dockercompose.png" alt="Docker Compose">
+
 <h3> Explanation of docker compose <h3>
 <pre>
+  
 version: "3.8" #docker engine version
 
 services:      # here we tell how to build images for each services 

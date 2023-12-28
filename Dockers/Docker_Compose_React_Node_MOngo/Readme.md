@@ -1,3 +1,4 @@
+<pre>
 #########################################################
                React Node Mongo DB
 
@@ -75,3 +76,4 @@ volumes:
   volume1_name: # Let's define the above volume before use
 
 # You can write services in any order
+</pre>

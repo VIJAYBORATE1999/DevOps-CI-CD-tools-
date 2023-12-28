@@ -44,6 +44,6 @@ services:      # here we tell how to build images for each services
 volumes:
   volume1_name: # lets define above volume before use
 
-  # You can write service in any order
+  # You can write service in any order.
 </pre>
 

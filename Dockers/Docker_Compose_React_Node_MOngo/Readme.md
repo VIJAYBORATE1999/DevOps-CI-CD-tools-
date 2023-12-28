@@ -47,35 +47,3 @@ volumes:
   # You can write service in any order
 </pre>
 
-
-<pre>
-  ########################################################################################
-
-  version: "3.8" # Docker engine version
-
-services:
-  service_name1: # frontend: This service (Host) has its own Dockerfile
-    build: ./frontend # Path to the Service 1 Dockerfile
-    ports: # Port mapping for service 1: Port of HOST : Port of Container
-      - 3000:3000
-
-  service_name2: # backend: This service (Host) has its own Dockerfile
-    build: ./backend # Path to the Service 2 Dockerfile
-    ports: # Port mapping for service 2: Port of HOST : Port of Container
-      - 3001:3001
-    environment:
-      - variable1_name= # - DB_URL=mongodb://db/vidly (Syntax 1)
-      variable2_name:   # DB_URL: mongodb://db/vidly (Object Value Syntax 1)
-
-  service_name3: # mongodb: This service (Host) has its own Dockerfile
-    image: mongo:4.0-xenial # We pull the MongoDB image from Docker Hub
-    ports: # Port mapping for service 3: Port of HOST : Port of Container
-      - 27017:27017 # MongoDB by default listens at port 27017
-    volumes: # We don't want MongoDB to write data to the temporary filesystem of the container
-      - volume1_name: # We will map this volume to a directory outside the container. - vidly:/data/db. Let's define this volume as well
-
-volumes:
-  volume1_name: # Let's define the above volume before use
-
-# You can write services in any order
-</pre>

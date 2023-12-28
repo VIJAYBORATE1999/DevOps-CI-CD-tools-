@@ -18,7 +18,7 @@ Folder Structure
 |-docker-compose.yaml      
 #########################################################
 </pre>
-
+<h3> Explanation of docker compose <h3>
 <pre>
 version: "3.8" #docker engine version
 

@@ -17,7 +17,9 @@ Folder Structure
 |
 |-docker-compose.yaml      
 #########################################################
+</pre>
 
+<pre>
 version: "3.8" #docker engine version
 
 services:      # here we tell how to build images for each services 
@@ -43,10 +45,10 @@ volumes:
   volume1_name: # lets define above volume before use
 
   # You can write service in any order
+</pre>
 
 
-
-
+<pre>
   ########################################################################################
 
   version: "3.8" # Docker engine version

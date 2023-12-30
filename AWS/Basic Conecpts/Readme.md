@@ -32,7 +32,7 @@ Then Suppose if we add any user in the Develpoers group then User will by deaful
 </pre>
 
 
-
+<pre> 
 <h1>Concept of Roles</h1>  
    
 Roles : used for services running outside AWS/ Interacting with AWS aacounts.
@@ -56,7 +56,9 @@ or require similar access permissions.
 
 
     <pre> 
-      <H1> Summary of IAM – Roles , Users and all componets </H1> 
+    
+<H1> Summary of IAM – Roles , Users and all componets </H1> 
+
 1) **Users:**
    - **Root:** Has all permissions by default.
    - **IAM User:** Custom permissions can be assigned individually.Permanent access unless credentials are revoked or rotated.
@@ -85,7 +87,7 @@ IN AWS , IAM User: are often application-specific or tied to specific individual
 
 In summary, IAM Users can have custom permissions, IAM Policies define those permissions, Roles are for users and services, and Groups provide a way to collectively manage permissions for multiple users within the AWS environment.
     
-    
+</pre> 
 
 
 

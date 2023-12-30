@@ -29,7 +29,13 @@ Then Suppose if we add any user in the Develpoers group then User will by deaful
  
     • Note ) We dont create all this things From root user . For this we have IAM user account for Devops , developers, testers , etc .   And only Devops  have right to this services  such as creating user , deleting user etc .
     
-    </pre>
+</pre>
+
+
+    <pre> </pre>
+    <pre> </pre>
+    
+
 
 
     

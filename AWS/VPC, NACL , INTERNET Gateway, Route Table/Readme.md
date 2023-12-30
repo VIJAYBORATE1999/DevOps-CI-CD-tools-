@@ -16,11 +16,11 @@ provide access to it .
 As we create VPC , By Deafult aws creates
  
     • <B>INTERNET Gateway </B>: Is an entry point to VPC. This allows instances in the default
-         public subnet to communicate with the internet(Outgoing Requests) and allows incoming 
-         request to VPC into Public subnet via internet. 
+        public subnet to communicate with the internet(Outgoing Requests) and allows incoming 
+        request to VPC into Public subnet via internet. 
       
     • <B>NACL (Network Access Control List )</B> :  provides security a subnet level Of VPC. It has 
-         Both Configuration - Deny and Allow feature for requests.
+        Both Configuration - Deny and Allow feature for requests.
  
     • <B>Security Group</B>: A default security group is created and associated with the VPC. 
        All inbound traffic is denied by default and allows all outbound traffic.

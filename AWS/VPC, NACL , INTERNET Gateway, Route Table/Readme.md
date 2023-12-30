@@ -15,20 +15,22 @@ provide access to it .
 
 As we create VPC , By Deafult aws creates
  
-    • <B>INTERNET Gateway </B>: An internet gateway is created and attached to the VPC. This allows 
-      instances in the default public subnet to communicate with the internet(Outgoing Requests) and 
-      allows incoming request to VPC into Public subnet via internet. 
+    • <B>INTERNET Gateway </B>: Is an entry point to VPC. This allows instances in the default
+         public subnet to communicate with the internet(Outgoing Requests) and allows incoming 
+         request to VPC into Public subnet via internet. 
       
-    • <B>NACL (Network Access Control List )</B>with default configuration provides security a subnet level 
+    • <B>NACL (Network Access Control List )</B> :  provides security a subnet level Of VPC. It has 
+         Both Configuration - Deny and Allow feature for requests.
+ 
+    • <B>Security Group</B>: A default security group is created and associated with the VPC. 
+       All inbound traffic is denied by default and allows all outbound traffic.
+       Security – has Only Allow Feature. So we cannot used Deny feature here.
  
     • <B>Route Table </B>:A main route table is created for the VPC, and all subnets are 
       associated with this route table by default. 
  
-    • <B>Default Security Group</B>: A default security group is created and associated with the VPC. 
-      This security group allows all outbound traffic and denies all inbound traffic by default. 
- 
-    • <B>Network ACL (Access Control List)</B>: A default network ACL is created and associated 
-      with the VPC. This ACL allows all inbound and outbound traffic by default. 
+    • <B>Network ACL (Access Control List)</B>: associated with the VPC.  All inbound and 
+      outbound traffic is denied by default.NACLs support both allow and deny traffic rules.
  
     • <B>Default Subnet </B>: One default subnet is created in each Availability Zone within the VPC.
       These subnets are public by default

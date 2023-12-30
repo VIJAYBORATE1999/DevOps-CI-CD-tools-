@@ -40,7 +40,7 @@ As we create VPC , By Deafult aws creates
     • Security Group is final level defnece at instance level
 
      <B>ELASTIC  Load BALANCER </B>: IS ATTACHED TO public Subnet .As load balancer is created AWS allocates 
-    IP address to it.It forward the request depending upon the load  at Instances .
+      IP address to it.It forward the request depending upon the load  at Instances .
  
    • <b> TARGET GROUP </b> :   For LOAD BALANCVER WE WILL CREATE A TARGET GROUP
  

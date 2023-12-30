@@ -10,7 +10,7 @@ FOR SECURITY PURPOSES. So FOR VPC size - AWS asks for IP Address Ranges.
  Devops ENGINER WILL CREATE A GATEWAY .As without gateway we wont be able to
  access the VPC. 
 
- In VPC we have free space (cOMMON SUBNET )called Public Subnet . And internet gateway 
+ In VPC we have free space (COMMON SUBNET )called Public Subnet . And internet gateway 
 provide access to it .
 
 As we create VPC , By Deafult aws creates
@@ -27,22 +27,30 @@ As we create VPC , By Deafult aws creates
        Security – has Only Allow Feature. So we cannot used Deny feature here.
  
     • <B>Route Table </B>:A main route table is created for the VPC, and all subnets are 
-      associated with this route table by default. 
+      associated with this route table by default. WHICH DEFINES PATH HOW REQUEST MUST GO TO Instances
+      FROM LOAD BALANCER.
+
  
     • <B>Network ACL (Access Control List)</B>: associated with the VPC.  All inbound and 
       outbound traffic is denied by default.NACLs support both allow and deny traffic rules.
  
     • <B>Default Subnet </B>: One default subnet is created in each Availability Zone within the VPC.
       These subnets are public by default
-    <IMG SRC="VPC.png">
-    <h4></h4>
-
-
+      <IMG SRC="VPC.png">
 
      <B>ELASTIC  Load BALANCER </B>: IS ATTACHED TO public Subnet .As load balancer is created AWS allocates 
     IP address to it.It forward the request depending upon the load  at Instances .
-    
-    <B>ROUTE TABLE </B>: WHICH DEFINES PATH HOW REQUEST MUST GO TO Instances FROM LOAD BALANCER.
+ 
+    For LOAD BALANCVER WE WILL CREATE A TARGET GROUP
+    Also AT INSTACES Also WE HAVE SECURITY GROUPS
+
+    <B> NAT GATEWAY Conept</B>:  we dont want the User to know the private ip of our EC2 instaces we do maskinng 
+    of IP Address by NAT gatways . It will mask or change the private adress Of EC2 to Public ip address of load 
+    balancer(Called as SNAT) or router(THen called as NAT).So WE CRATE NAT gateway in public Subnet .
+
+    VPC can have both public and private Subnet. Generally in private subnet we have Applicatoin /Insatances and 
+    In in public we have Load balancer+NAT gateway.   
+ 
     
 </pre>
 <pre>

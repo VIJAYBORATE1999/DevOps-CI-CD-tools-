@@ -21,7 +21,7 @@ As we create VPC , By Deafult aws creates
       
     • <B>NACL (Network Access Control List )</B> :  provides security a subnet level Of VPC. It has 
        Both Configuration - Deny and Allow feature for requests. All inbound and 
-       outbound traffic is denied by default.
+       outbound traffic is denied by default.(Go to VPC service --> Security -> Network ACLs)
  
     • <B>Security Group</B>: A default security group is created and associated with the VPC. 
        All inbound traffic is denied by default and allows all outbound traffic.

@@ -1,4 +1,4 @@
-s<pre> 
+<pre> 
 <h1>Concept of Users </h1> 
     • Root (Have all persmisson) It has complete administrative access to all AWS services and resources 
       within the account. 

@@ -35,3 +35,10 @@ Here are the main five types of Amazon EC2 instances described :
     
     
 </pre> 
+
+<pre>
+
+<h1> ACCESS EC2  PORT FROM WEBROWSER OR FROM OUTSIDE </h1>
+<img src="ec2Connect.png">
+
+</pre>

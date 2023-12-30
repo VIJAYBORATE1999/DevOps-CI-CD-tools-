@@ -6,5 +6,6 @@ I am an accomplished Software Engineer at NCS with a strong command of various d
 <br>
 Through my ongoing learning journey, I am dedicated to staying updated with the latest trends and technologies, constantly enhancing my skills for effective problem-solving and innovative solutions in the field of software engineering and DevOps.<br>
 <br>
-# I am sharing this as a part of my learning from  Youtubers : Abhishek.Veeramalla & Technical Guftgu.
-# I Will also be uploading me Self made notes...
+
+# During my journey at NCS AS DevOps
+<H3>I Will also be documenting my part of learning in form of my Self made notes...</H3>

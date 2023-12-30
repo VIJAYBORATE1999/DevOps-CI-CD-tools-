@@ -34,7 +34,7 @@ As we create VPC , By Deafult aws creates
  
     • <B>Default Subnet </B>: One default subnet is created in each Availability Zone within the VPC.
       These subnets are public by default
-    
+    <IMG SRC="VPC.png">
     <h4></h4>
 </pre>
 

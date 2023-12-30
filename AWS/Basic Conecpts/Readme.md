@@ -10,7 +10,7 @@
 </pre>
 
 
-    <pre> 
+<pre> 
 <h1>Concept of Group</h1>  
 So we will just create a group and then latter we Can add n no of users to group . As adding policies to users 
 is time taking . Also adding users to particluar groups make the provcess fast and organized manner.
@@ -32,13 +32,4 @@ Then Suppose if we add any user in the Develpoers group then User will by deaful
     </pre>
 
 
-    
-    <pre> </pre>
-
-    <pre> </pre>
-    <pre> </pre>
-    <pre> </pre>
-    <pre> </pre>
-    <pre> </pre>
-    <pre> </pre>
     

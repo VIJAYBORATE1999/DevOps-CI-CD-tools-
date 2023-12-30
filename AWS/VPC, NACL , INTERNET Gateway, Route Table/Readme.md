@@ -52,7 +52,7 @@ As we create VPC , By Deafult aws creates
     VPC can have both public and private Subnet. Generally in private subnet we have Applicatoin /Insatances and 
     In in public we have Load balancer+NAT gateway.   
 
- 
+   <IMG SRC="VPC diagram.png">
     
 </pre>
 <pre>

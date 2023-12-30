@@ -19,4 +19,18 @@ Here are the main five types of Amazon EC2 instances described :
 
 <h1> EC2 SETUP <h1>
 <img src="ec2setup.png">
-<h1> SSH TO EC2 <h1>
+<h1> SSH TO EC2 from your PC to get logged into instance  <h1>
+
+<pre> 
+<h4> PEM FILE  </h4>
+    1)Go to downloded PEM file location  and give permisssion to it 
+     Use :   chmod 600 aws_login.pem
+
+    2) USe the shh command 
+     ssh -i /path_to_your_key/your_pem_filename.pem your_user@your_ec2_public_ip
+
+     to get  your_user run command :  whoami
+     
+    
+    
+</pre> 

@@ -42,8 +42,9 @@ As we create VPC , By Deafult aws creates
      <B>ELASTIC  Load BALANCER </B>: IS ATTACHED TO public Subnet .As load balancer is created AWS allocates 
     IP address to it.It forward the request depending upon the load  at Instances .
  
-    For LOAD BALANCVER WE WILL CREATE A TARGET GROUP
-    Also AT INSTACES Also WE HAVE SECURITY GROUPS
+   • <b> TARGET GROUP </b> :   For LOAD BALANCVER WE WILL CREATE A TARGET GROUP
+ 
+      AT INSTACES(ec2)level Also WE HAVE SECURITY GROUPS
 
     <B> NAT GATEWAY Conept</B>:  we dont want the User to know the private ip of our EC2 instaces we do maskinng 
     of IP Address by NAT gatways . It will mask or change the private adress Of EC2 to Public ip address of load 

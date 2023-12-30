@@ -19,3 +19,4 @@ Here are the main five types of Amazon EC2 instances described :
 
 <h1> EC2 SETUP <h1>
 <img src="ec2setup.png">
+<h1> SSH TO EC2 <h1>

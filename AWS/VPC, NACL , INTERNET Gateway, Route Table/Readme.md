@@ -11,7 +11,7 @@ FOR SECURITY PURPOSES. So FOR VPC size - AWS asks for IP Address Ranges.
  access the VPC. 
 
  In VPC we have free space (COMMON SUBNET )called Public Subnet . And internet gateway 
-provide access to it .
+ provide access to it .
 
 As we create VPC , By Deafult aws creates
  
@@ -30,13 +30,16 @@ As we create VPC , By Deafult aws creates
       associated with this route table by default. WHICH DEFINES PATH HOW REQUEST MUST GO TO Instances
       FROM LOAD BALANCER.
 
- 
     • <B>Network ACL (Access Control List)</B>: associated with the VPC.  All inbound and 
       outbound traffic is denied by default.NACLs support both allow and deny traffic rules.
  
     • <B>Default Subnet </B>: One default subnet is created in each Availability Zone within the VPC.
-      These subnets are public by default
+      These subnets are public by default.
+
       <IMG SRC="VPC.png">
+
+    • NACL is firstlayer defence   Subnet level 
+    • Security is final level defnece at instance level
 
      <B>ELASTIC  Load BALANCER </B>: IS ATTACHED TO public Subnet .As load balancer is created AWS allocates 
     IP address to it.It forward the request depending upon the load  at Instances .
@@ -52,9 +55,6 @@ As we create VPC , By Deafult aws creates
     In in public we have Load balancer+NAT gateway.   
 
  
-    • NACL is firstlayer defence   Subnet level 
-    • Security is final level defnece at instance level
-
     
 </pre>
 <pre>

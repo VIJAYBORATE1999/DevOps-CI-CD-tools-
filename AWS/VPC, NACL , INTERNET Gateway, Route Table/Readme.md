@@ -1,18 +1,44 @@
 
 <pre>
-EC2 service 
-Elastic Cloud Compute : Provides you a virtual server .
-Compute instance : privides you CPU , RAM , Disk .
-Elastic : Service can be Scaled up or down.
+<h1>VIRTUAL PRIVATE CLOUD (VPC)</h1>
+Devops ENGINEER  CREATRE A VPC TO ALLOCATE SPECIFIC IP ADDRESS RANGE TO OUR PROJECTS
+FOR SECURITY PURPOSES. So FOR VPC size - AWS asks for IP Address Ranges.
 
-Here are the main five types of Amazon EC2 instances described : 
-    1 General Purpose Instances: Balanced compute, memory, and networking resources for diverse workloads.
-    2 Compute Optimized Instances: High-performance processors for compute-bound applications, ideal for 
-      batch processing and high-performance web servers.
-    3 Memory Optimized Instances: Fast performance for memory-intensive workloads, suitable for high-performance 
-      databases and real-time big data analytics.
-    4 Storage Optimized Instances: Designed for high, sequential read/write access to large data sets, perfect for 
-      data warehousing and log processing applications.
-    5 Accelerated Computing Instances: Hardware accelerators for efficient processing of tasks such as machine 
-      learning and computational fluid dynamics
+ Now you big projects may have subprojects (Dev ,Test,Other etc): so we will split 
+ ip address ranges again called – Subnets.The subnets can be public and private.
+
+ Next Devops ENGINER WILL CREATE A GATEWAY .As without gateway we wont be able to
+ access the VPC. 
+
+ In VPC we have free space (cOMMON SUBNET )called Public Subnet . And internet gateway 
+provide access to it .
+
+As we create VPC , By Deafult aws creates
+    • INTERNET Gateway : An internet gateway is created and attached to the VPC. This allows 
+      instances in the default public subnet to communicate with the internet.
+    • NACL (Network Access Control List ) with default configuration : is security a subnet level 
+    • Route Table :A main route table is created for the VPC, and all subnets are 
+      associated with this route table by default. 
+    • Default Security Group: A default security group is created and associated with the VPC. 
+      This security group allows all outbound traffic and denies all inbound traffic by default. 
+    • Default Network ACL (Access Control List): A default network ACL is created and associated 
+      with the VPC. This ACL allows all inbound and outbound traffic by default. 
+    • Default Subnet: One default subnet is created in each Availability Zone within the VPC.
+      These subnets are public by default
+    
+    <h4></h4>
+</pre>
+
+
+
+<pre>
+<h1></h1>
+    <h4></h4>
+</pre>
+
+
+
+<pre>
+<h1></h1>
+    <h4></h4>
 </pre>

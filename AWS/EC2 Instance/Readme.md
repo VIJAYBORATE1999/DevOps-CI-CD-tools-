@@ -23,6 +23,7 @@ Here are the main five types of Amazon EC2 instances described :
 
 <pre> 
 <h4> PEM FILE  </h4>
+    
     1)Go to downloded PEM file location  and give permisssion to it 
      Use :   chmod 600 aws_login.pem
 

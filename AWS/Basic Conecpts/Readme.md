@@ -1,5 +1,5 @@
 <pre> 
-Concept of Users  
+<h1>Concept of Users </h1> 
     • Root (Have all persmisson) It has complete administrative access to all AWS services and resources within the account. 
     • IAM(have custom permissions )are separate identities with customizable permissions within an AWS account using IAM policies.
     IAM users can be granted permissions that allow them to perform some actions that are typically associated with the root account, 

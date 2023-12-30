@@ -8,4 +8,4 @@ Through my ongoing learning journey, I am dedicated to staying updated with the 
 <br>
 
 # During my journey at NCS AS DevOps
-<H3>I Will also be documenting my part of learning in form of my Self made notes...</H3>
+<H3>I will also be documenting my part of learning in form of my Self made notes...</H3>

@@ -7,7 +7,7 @@ cASE 1) when your Redis in default VPC (Public Subnet )
 
 USer request <--> INternert gateway <--> redis
 <img src="Approach 1.png">
-<img src="Approach 2.png">
+
   
 </pre>
 
@@ -21,7 +21,9 @@ USer request --> INternert gateway --> BAstian Host --> REdis
 OUtgoing request :
 
 Redis --> NAT gateway --> INternet gateway --> User 
-</pre>pre>
+
+  <img src="Approach 2.png">
+</pre>
   
 <pre>
 Internet Gateway enables resources (like EC2 instances) in public subnets to connect to the internet.

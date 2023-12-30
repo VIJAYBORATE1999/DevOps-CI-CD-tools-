@@ -38,8 +38,8 @@ As we create VPC , By Deafult aws creates
 
       <IMG SRC="VPC.png">
 
-    • NACL is firstlayer defence   Subnet level 
-    • Security is final level defnece at instance level
+    • NACL is firstlayer defence  at Subnet level 
+    • Security Group is final level defnece at instance level
 
      <B>ELASTIC  Load BALANCER </B>: IS ATTACHED TO public Subnet .As load balancer is created AWS allocates 
     IP address to it.It forward the request depending upon the load  at Instances .

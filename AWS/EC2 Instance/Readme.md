@@ -31,8 +31,18 @@ Here are the main five types of Amazon EC2 instances described :
      ssh -i /path_to_your_key/your_pem_filename.pem your_user@your_ec2_public_ip
 
      to get  your_user run command :  whoami
-     
-    
+      
+</pre> 
+
+<h1> Connect TO EC2 from your Windows PC to get logged into instance  </h1>
+<pre>
+    Can be done in 2 ways :
+    1) PUTTY
+    2) MOBAXTERM
+
+    LETS SEE VIA MOBAXTERM
+<IMG SRC="MOBEXTERN.png">
+
     
 </pre> 
 

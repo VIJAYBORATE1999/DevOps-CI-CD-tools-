@@ -38,8 +38,10 @@ Then Suppose if we add any user in the Develpoers group then User will by deaful
 Roles : used for services running outside AWS/ Interacting with AWS aacounts.
 Such as JENKINS , TERAFORM .
 Roles are used to provide permissions to both users and services.
-groups are specifically used for providing permissions to users within the AWS environment.
-groups in AWS are primarily used for managing permissions collectively for multiple users. 
+
+Groups are specifically used for providing permissions to users within the AWS environment.
+
+Groups in AWS are primarily used for managing permissions collectively for multiple users. 
 These users can inherit the permissions associated with the group. 
 Groups make it easier to manage permissions for a set of users who share the same job function
 or require similar access permissions.

@@ -36,7 +36,7 @@ As we create VPC , By Deafult aws creates
       These subnets are public by default
     <IMG SRC="VPC.png">
     <h4></h4>
-</pre>
+
 
 
      <B>ELASTIC  Load BALANCER </B>: IS ATTACHED TO public Subnet .As load balancer is created AWS allocates 
@@ -44,7 +44,7 @@ As we create VPC , By Deafult aws creates
     
     <B>ROUTE TABLE  </B>: WHICH DEFINES 	PATH  HOW REQUEST MUST GO TO Instances FROM LOAD BALANCER.
     
-
+</pre>
 <pre>
 <h1></h1>
     <h4></h4>

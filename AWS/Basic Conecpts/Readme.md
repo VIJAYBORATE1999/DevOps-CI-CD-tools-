@@ -10,7 +10,29 @@
 </pre>
 
 
-    <pre> </pre>
+    <pre> 
+<h1>Concept of Group</h1>  
+So we will just create a group and then latter we Can add n no of users to group . As adding policies to users 
+is time taking . Also adding users to particluar groups make the provcess fast and organized manner.
+
+ suppose we have Groups such as 
+    • Develpoers 
+    • Testers 
+    • Others 
+
+Then we will attach  Policies (pi)into each group 
+    • Develpoers   - p1 , p2, p3 
+    • Testers  - p4 , p5 , p6
+    • Others – p7 
+
+Then Suppose if we add any user in the Develpoers group then User will by deafult have P1, p2 p3 Policies added to it . Thus Now Process has become organized and reduced manual efffort.
+ 
+    • Note ) We dont create all this things From root user . For this we have IAM user account for Devops , developers, testers , etc .   And only Devops  have right to this services  such as creating user , deleting user etc .
+    
+    </pre>
+
+
+    
     <pre> </pre>
 
     <pre> </pre>

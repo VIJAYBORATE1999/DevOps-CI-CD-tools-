@@ -20,7 +20,8 @@ As we create VPC , By Deafult aws creates
        request to VPC into Public subnet via internet. 
       
     • <B>NACL (Network Access Control List )</B> :  provides security a subnet level Of VPC. It has 
-       Both Configuration - Deny and Allow feature for requests.
+       Both Configuration - Deny and Allow feature for requests. All inbound and 
+       outbound traffic is denied by default.
  
     • <B>Security Group</B>: A default security group is created and associated with the VPC. 
        All inbound traffic is denied by default and allows all outbound traffic.
@@ -29,9 +30,6 @@ As we create VPC , By Deafult aws creates
     • <B>Route Table </B>:A main route table is created for the VPC, and all subnets are 
       associated with this route table by default. WHICH DEFINES PATH HOW REQUEST MUST GO TO Instances
       FROM LOAD BALANCER.
-
-    • <B>Network ACL (Access Control List)</B>: associated with the VPC.  All inbound and 
-      outbound traffic is denied by default.NACLs support both allow and deny traffic rules.
  
     • <B>Default Subnet </B>: One default subnet is created in each Availability Zone within the VPC.
       These subnets are public by default.

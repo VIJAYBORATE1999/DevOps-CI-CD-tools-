@@ -14,16 +14,16 @@ FOR SECURITY PURPOSES. So FOR VPC size - AWS asks for IP Address Ranges.
 provide access to it .
 
 As we create VPC , By Deafult aws creates
-    • INTERNET Gateway : An internet gateway is created and attached to the VPC. This allows 
+    • <B>INTERNET Gateway </B>: An internet gateway is created and attached to the VPC. This allows 
       instances in the default public subnet to communicate with the internet.
-    • NACL (Network Access Control List ) with default configuration : is security a subnet level 
-    • Route Table :A main route table is created for the VPC, and all subnets are 
+    • <B>NACL (Network Access Control List )</B>with default configuration provides security a subnet level 
+    • <B>Route Table </B>:A main route table is created for the VPC, and all subnets are 
       associated with this route table by default. 
-    • Default Security Group: A default security group is created and associated with the VPC. 
+    • <B>Default Security Group</B>: A default security group is created and associated with the VPC. 
       This security group allows all outbound traffic and denies all inbound traffic by default. 
-    • Default Network ACL (Access Control List): A default network ACL is created and associated 
+    • <B>Network ACL (Access Control List)</B>: A default network ACL is created and associated 
       with the VPC. This ACL allows all inbound and outbound traffic by default. 
-    • Default Subnet: One default subnet is created in each Availability Zone within the VPC.
+    • <B>Default Subnet </B>: One default subnet is created in each Availability Zone within the VPC.
       These subnets are public by default
     
     <h4></h4>

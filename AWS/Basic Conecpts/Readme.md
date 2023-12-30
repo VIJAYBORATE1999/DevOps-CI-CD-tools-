@@ -31,7 +31,7 @@ Then Suppose if we add any user in the Develpoers group then User will by deaful
     
 </pre>
 
-<pre>
+
 
 <h1>Concept of Roles</h1>  
    
@@ -86,9 +86,7 @@ IN AWS , IAM User: are often application-specific or tied to specific individual
 In summary, IAM Users can have custom permissions, IAM Policies define those permissions, Roles are for users and services, and Groups provide a way to collectively manage permissions for multiple users within the AWS environment.
     
     
-    </pre>
-    <pre> </pre>
-    
+
 
 
 

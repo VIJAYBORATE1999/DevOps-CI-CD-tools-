@@ -42,7 +42,7 @@ As we create VPC , By Deafult aws creates
      <B>ELASTIC  Load BALANCER </B>: IS ATTACHED TO public Subnet .As load balancer is created AWS allocates 
     IP address to it.It forward the request depending upon the load  at Instances .
     
-    <B>ROUTE TABLE  </B>: WHICH DEFINES 	PATH  HOW REQUEST MUST GO TO Instances FROM LOAD BALANCER.
+    <B>ROUTE TABLE </B>: WHICH DEFINES 	PATH  HOW REQUEST MUST GO TO Instances FROM LOAD BALANCER.
     
 </pre>
 <pre>

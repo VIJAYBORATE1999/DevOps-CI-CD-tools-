@@ -42,7 +42,8 @@ As we create VPC , By Deafult aws creates
      <B>ELASTIC  Load BALANCER </B>: IS ATTACHED TO public Subnet .As load balancer is created AWS allocates 
       IP address to it.It forward the request depending upon the load  at Instances .
  
-   • <b> TARGET GROUP </b> :   For LOAD BALANCVER WE WILL CREATE A TARGET GROUP
+   • <b> TARGET GROUP </b> :   For LOAD BALANCVER WE WILL CREATE A TARGET GROUP. This target group filters traffic
+       at load balancer.
  
       AT INSTACES(ec2)level Also WE HAVE SECURITY GROUPS
 

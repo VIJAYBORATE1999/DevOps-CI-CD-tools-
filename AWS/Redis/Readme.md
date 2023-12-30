@@ -36,4 +36,4 @@ For a vpc we have single iNTERNET GATEWAY .
 NAT Gateway does something similar to Internet Gateway (IGW), but it only works one way: Instances in a private 
   subnet can connect to services outside your VPC but external services cannot initiate a connection with those
   instances. NAT gatway is creaed in availability zones
-</pre>pre>
+</pre>
